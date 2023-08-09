@@ -9,15 +9,20 @@ class HelloWorld(Resource):
  def get(self):
 
         data = [
-        'first',
-        'API',
-        'Response',
-        'with',
-        'random List',
-        'python',
-        'testing',
-                ]
-        
+            {
+                'word': 'cat',
+                'type': 'animal',
+            },
+            {
+                'word': 'football',
+                'type': 'sports',
+            },
+            {
+                'word': 'rice',
+                'type': 'food',
+            },
+        ]
+
         return {
                 'data': data,
                 }
